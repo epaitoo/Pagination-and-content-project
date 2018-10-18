@@ -11,7 +11,7 @@ const page = document.querySelector('.page'); //selects the whole page
 //     showPage(e.srcElement.textContent, studentList);
 //   }));
 
-function showpage(pageNum, studentList) {
+function showPage(pageNum, studentList) {
    for (let i = 0; i < studentList.length; i++) {
     // Get the first index that should display and the last index to display
     const firstItem = pageNum * numberPerPage - numberPerPage;
@@ -74,6 +74,6 @@ paginationLinks[i].className = 'active';
 
 
 
-showpage(1, studentList); //Display the first 10 students on load
+showPage(1, studentList); //Display the first 10 students on load
 
 appendPageLinks(studentList);
